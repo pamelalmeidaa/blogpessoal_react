@@ -4,9 +4,9 @@ import Navbar from './components/navbar/Navbar'
 import Home from './pages/home/Home'
 
 function App() {
-  //Código Typescript
+  
   return (
-  // Código TSX - HTML e CSS
+  
   <>
     <BrowserRouter>
         <Navbar/>
