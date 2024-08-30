@@ -2,8 +2,9 @@ import { ChangeEvent, FormEvent, useEffect, useState } from "react";
 import "./Cadastro.css";
 import Usuario from "../../models/Usuario";
 import { useNavigate } from "react-router-dom";
-import { cadastrarUsuario } from "../../services/service";
 import { RotatingLines } from "react-loader-spinner";
+import { cadastrarUsuario } from "../../services/Service";
+
 
 function Cadastro() {
   // Hook useNavigate para redirecionar rotas
