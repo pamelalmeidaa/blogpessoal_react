@@ -36,11 +36,11 @@ function Cadastro() {
     navigate("/login");
   }
 
-  // Monitora eventos change que acontecem no formulário,no caso ao digitarmos algo no input
+
   function atualizarEstado(e: ChangeEvent<HTMLInputElement>) {
     setUsuario({
       ...usuario,
-      // Como o target name é igual o nome da propriedade,podemos manter o mesmo nome do input
+
       [e.target.name]: e.target.value,
     });
   }
