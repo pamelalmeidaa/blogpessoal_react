@@ -20,15 +20,10 @@ function App() {
   // Código TypeScript
 
   return (
-    // Código TSX => HTML + CSS
     <>
-      {/* 
-          Envolvemos todos os Componentes inseridos no Componente App, 
-          com o Componente AuthProvider. 
-          Desta forma, todos os Componentes dentro dele, terão acesso 
-          aos Estados e Funções guardados na context.
-      */}
+      { }
       <AuthProvider>
+      
         <ToastContainer />
         <BrowserRouter>
           <Navbar />

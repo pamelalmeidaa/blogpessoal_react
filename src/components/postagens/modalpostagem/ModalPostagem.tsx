@@ -22,4 +22,4 @@ function ModalPostagem() {
     );
 }
 
-export default ModalPostagem;
+export default ModalPostagem

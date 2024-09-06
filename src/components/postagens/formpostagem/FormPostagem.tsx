@@ -207,4 +207,4 @@ function FormPostagem() {
     );
 }
 
-export default FormPostagem;
+export default FormPostagem

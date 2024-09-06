@@ -6,7 +6,7 @@ import { atualizar, buscar, cadastrar } from '../../../services/Service';
 import { RotatingLines } from 'react-loader-spinner';
 import { ToastAlerta } from '../../../utils/ToastAlerta';
 
-function FormularioTema() {
+function FormTema() {
 
 const navigate = useNavigate();
 const [tema,setTema] = useState<Tema>({} as Tema)
@@ -47,7 +47,6 @@ function retornar() {
 function atualizarEstado(e: ChangeEvent<HTMLInputElement>) {
     setTema({
       ...tema,
-      // Como o target name é igual o nome da propriedade,podemos manter o mesmo nome do input
       [e.target.name] : e.target.value
     })
 } 
@@ -56,7 +55,6 @@ async function gerarNovoTema (e: FormEvent<HTMLFormElement>){
       e.preventDefault()
 
       setIsLoading(true)
-      // Checar se é uma atualização ou se é um novo cadastro
 
       if (id !== undefined) {
         try {
@@ -126,4 +124,4 @@ async function gerarNovoTema (e: FormEvent<HTMLFormElement>){
   )
 }
 
-export default FormularioTema
+export default FormTema

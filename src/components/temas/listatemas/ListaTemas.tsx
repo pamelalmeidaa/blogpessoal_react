@@ -79,4 +79,4 @@ function ListaTemas() {
         </>
     )
 }
-export default ListaTemas;
+export default ListaTemas

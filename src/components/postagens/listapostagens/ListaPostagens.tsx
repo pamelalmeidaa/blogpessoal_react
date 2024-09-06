@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import CardPostagens from "../cardpostagens/CardPostagens";
+import CardPostagens from "../cardpostagem/CardPostagem";
 import { useState, useContext, useEffect } from "react";
 import { AuthContext } from "../../../contexts/AuthContext";
 import Postagem from "../../../models/Postagem";
@@ -66,4 +66,4 @@ function ListaPostagens() {
     );
 }
 
-export default ListaPostagens;
+export default ListaPostagens
